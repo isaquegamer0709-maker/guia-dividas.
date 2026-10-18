@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Do Vermelho ao Azul: o passo a passo para sair das dívidas em 30 dias</title>
+<style>
+:root{--bg:#fff;--fg:#1e2430;--muted:#5b6778;--card:#f3f6fa;--line:#d8dfe8;--navy:#12355b;--green:#1f8a5b;--greenbg:#e6f5ee;--red:#c0392b;--redbg:#fbeae8;--onnavy:#fff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1626;--fg:#e8edf4;--muted:#9fb0c4;--card:#15233a;--line:#26364f;--navy:#1b4a7c;--green:#3fc08a;--greenbg:#12302a;--red:#f0705f;--redbg:#3a1f20}}
+:root[data-theme="dark"]{--bg:#0d1626;--fg:#e8edf4;--muted:#9fb0c4;--card:#15233a;--line:#26364f;--navy:#1b4a7c;--green:#3fc08a;--greenbg:#12302a;--red:#f0705f;--redbg:#3a1f20}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;padding-bottom:84px}
+.w{max-width:760px;margin:0 auto;padding:0 20px}
+section{padding:46px 0}
+h1,h2,h3{line-height:1.15;margin:0 0 14px;letter-spacing:-.01em}
+h1{font-size:clamp(32px,8vw,50px)}h2{font-size:clamp(25px,6vw,34px)}h3{font-size:19px}
+p{margin:0 0 14px}.muted{color:var(--muted)}
+.tag{display:inline-block;font:700 12px/1 system-ui;letter-spacing:.12em;text-transform:uppercase;color:var(--green);margin-bottom:12px}
+.red{color:var(--red)}.grn{color:var(--green)}
+.hero{background:linear-gradient(160deg,#12355b,#0c2441);color:#fff;padding:40px 0 48px}
+.hero .muted{color:#c3d1e3}.hero .tag{color:#7fd1ae}
+.btn{display:block;text-align:center;background:var(--green);color:#fff;text-decoration:none;font-weight:800;font-size:18px;padding:17px 22px;border-radius:14px;box-shadow:0 6px 18px rgba(31,138,91,.35);border:0;width:100%}
+.btn:active{transform:translateY(1px)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 0;padding:0;list-style:none}
+.chips li{font-size:13px;background:rgba(255,255,255,.12);padding:6px 11px;border-radius:99px}
+.book{margin:30px auto 0;width:210px;aspect-ratio:3/4;border-radius:6px 14px 14px 6px;background:#12355b;border-left:9px solid #1f8a5b;box-shadow:0 18px 40px rgba(0,0,0,.45);padding:20px 16px;display:flex;flex-direction:column;color:#fff}
+.book small{font:700 8px/1 system-ui;letter-spacing:.15em;color:#7fd1ae}
+.book b{font-size:25px;line-height:1.05;margin:10px 0 6px;font-weight:900}
+.book b i{font-style:normal;color:#f0705f}.book b u{text-decoration:none;color:#6cb4ee}
+.book span{font-size:10px;color:#d5deea}
+.bars{margin-top:auto;display:flex;align-items:flex-end;gap:4px;height:70px}
+.bars em{flex:1;border-radius:2px 2px 0 0}
+.grid{display:grid;gap:12px}
+@media(min-width:640px){.grid.c2{grid-template-columns:1fr 1fr}.grid.c4{grid-template-columns:1fr 1fr}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px}
+.card h3{margin-bottom:6px}.card p{margin:0;color:var(--muted);font-size:15.5px}
+.num{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--green);color:#fff;font-weight:800;font-size:14px;margin-bottom:8px}
+.pain{list-style:none;padding:0;margin:0}
+.pain li{padding:12px 14px 12px 44px;background:var(--redbg);border-radius:12px;margin-bottom:8px;position:relative}
+.pain li::before{content:"✕";position:absolute;left:15px;top:11px;color:var(--red);font-weight:900}
+.ok{list-style:none;padding:0;margin:0}
+.ok li{padding:8px 0 8px 32px;position:relative;border-bottom:1px solid var(--line)}
+.ok li::before{content:"✓";position:absolute;left:4px;color:var(--green);font-weight:900}
+.alt{background:var(--card)}
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;margin-bottom:9px}
+summary{cursor:pointer;padding:15px 18px;font-weight:700;list-style:none;display:flex;justify-content:space-between;gap:10px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--green);font-size:22px;line-height:1}
+details[open] summary::after{content:"−"}
+details p{padding:0 18px;margin:0 0 15px;color:var(--muted);font-size:15.5px}
+.ex{border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.ex div{display:flex;justify-content:space-between;padding:11px 16px;border-bottom:1px solid var(--line);font-size:15.5px}
+.ex div:last-child{border:0;background:var(--redbg);font-weight:800}
+.ex span:last-child{font-variant-numeric:tabular-nums}
+.price{background:linear-gradient(160deg,#12355b,#0c2441);color:#fff;border-radius:22px;padding:30px 22px;text-align:center}
+.price .big{font-size:56px;font-weight:900;line-height:1;margin:8px 0}
+.price .big small{font-size:22px;vertical-align:top;margin-right:4px}
+.price .ok li{border-color:rgba(255,255,255,.18);text-align:left}
+.price .ok li::before{color:#7fd1ae}
+.fine{font-size:13px;color:var(--muted)}
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--bg);border-top:1px solid var(--line);padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));display:flex;align-items:center;gap:12px}
+.bar div{font-size:13px;line-height:1.2;color:var(--muted);flex:0 0 auto}.bar b{display:block;font-size:19px;color:var(--fg)}
+.bar .btn{padding:12px 16px;font-size:16px;box-shadow:none}
+#toast{position:fixed;left:50%;bottom:96px;transform:translateX(-50%);background:var(--fg);color:var(--bg);padding:10px 16px;border-radius:10px;font-size:14px;opacity:0;pointer-events:none;transition:.25s;z-index:30;text-align:center;max-width:90%}
+#toast.on{opacity:1}
+</style>
+</head>
+<body>
+<header class="hero"><div class="w">
+<span class="tag">Guia prático em PDF</span>
+<h1>Saia do <span style="color:#f0705f">vermelho</span> em 30 dias com um passo a passo simples</h1>
+<p class="muted" style="font-size:19px">Descubra quanto você realmente deve, monte um orçamento que cabe na sua vida, negocie com os credores e pare de pagar juros que ninguém vê.</p>
+<a class="btn" href="#comprar" data-buy>Quero o guia agora</a>
+<ul class="chips"><li>📘 26 páginas</li><li>⚡ Acesso imediato</li><li>🖨️ Formulários imprimíveis</li><li>💬 Mensagens prontas</li></ul>
+<div class="book" aria-hidden="true"><small>GUIA PRÁTICO</small><b>DO <i>VERMELHO</i> AO <u>AZUL</u></b><span>O passo a passo para sair das dívidas</span>
+<div class="bars"><em style="height:100%;background:#e0453a"></em><em style="height:84%;background:#cb5a45"></em><em style="height:68%;background:#b06e50"></em><em style="height:54%;background:#92804f"></em><em style="height:42%;background:#74914f"></em><em style="height:30%;background:#4fa05a"></em><em style="height:20%;background:#2fb26a"></em></div></div>
+</div></header>
+
+<section><div class="w">
+<span class="tag">Você se identifica?</span>
+<h2>Dívida não é falta de caráter. É falta de um mapa.</h2>
+<ul class="pain">
+<li>Você tem medo de abrir a fatura do cartão.</li>
+<li>Paga o mínimo todo mês e a dívida só cresce.</li>
+<li>Não sabe ao certo quanto deve nem para quem.</li>
+<li>Já evitou ligações de cobrança por vergonha.</li>
+<li>O dinheiro acaba antes do mês e você não sabe para onde foi.</li>
+</ul>
+<p style="margin-top:16px">Milhões de brasileiros vivem isso. A boa notícia: quando a dívida vira número num papel, ela deixa de ser um monstro e passa a ser um problema com solução. Este guia mostra o caminho, um passo de cada vez.</p>
+</div></section>
+
+<section class="alt"><div class="w">
+<span class="tag">O método</span>
+<h2>4 etapas, nesta ordem</h2>
+<div class="grid c4">
+<div class="card"><span class="num">1</span><h3>Enxergar</h3><p>Liste tudo o que deve, a que custo e quanto paga de juros por mês.</p></div>
+<div class="card"><span class="num">2</span><h3>Organizar</h3><p>Descubra os vazamentos, corte sem sofrer e monte um orçamento de três caixas.</p></div>
+<div class="card"><span class="num">3</span><h3>Negociar</h3><p>Roteiros e mensagens prontas, e a ordem certa para pagar cada dívida.</p></div>
+<div class="card"><span class="num">4</span><h3>Sustentar</h3><p>Renda extra realista, colchão de emergência e hábitos para não voltar.</p></div>
+</div></div></section>
+
+<section><div class="w">
+<span class="tag">Um gostinho do conteúdo</span>
+<h2>O número que muda tudo</h2>
+<p>No guia, a personagem fictícia Marina recebe R$ 2.800 por mês e lista suas dívidas (valores ilustrativos):</p>
+<div class="ex">
+<div><span>Cartão rotativo · R$ 2.400 a 14%</span><span>R$ 336/mês</span></div>
+<div><span>Cheque especial · R$ 650 a 8%</span><span>R$ 52/mês</span></div>
+<div><span>Empréstimo · R$ 3.000 a 5%</span><span>R$ 150/mês</span></div>
+<div><span>Crediário · R$ 900 a 3%</span><span>R$ 27/mês</span></div>
+<div><span>Só de juros, por mês</span><span class="red">R$ 565</span></div>
+</div>
+<p style="margin-top:14px">São cerca de <b>20% da renda</b> indo embora sem reduzir a dívida. Você aprende a calcular o seu número e a atacar primeiro o que mais “sangra”.</p>
+</div></section>
+
+<section class="alt"><div class="w">
+<span class="tag">O que tem dentro</span>
+<h2>10 capítulos diretos ao ponto</h2>
+<details><summary>1. Você não está sozinho</summary><p>Como o método funciona, como usar o material e a regra de ouro dos primeiros 30 dias.</p></details>
+<details><summary>2. O mapa da dívida</summary><p>Onde procurar todas as dívidas, como classificá-las em urgentes, caras e demais, e os três números que importam.</p></details>
+<details><summary>3. Para onde vai o seu dinheiro</summary><p>Rastreamento de um mês, os vazamentos mais comuns e a pergunta dos três filtros.</p></details>
+<details><summary>4. Um orçamento que cabe na vida real</summary><p>O método das três caixas, com exemplo calculado e hábitos que fazem funcionar.</p></details>
+<details><summary>5. Cortes inteligentes</summary><p>Do corte sem dor às decisões grandes, e o que você não deve cortar.</p></details>
+<details><summary>6. Negociando com os credores</summary><p>Roteiro de ligação, três modelos de mensagem, alerta de golpes e seus direitos como consumidor.</p></details>
+<details><summary>7. Qual dívida pagar primeiro</summary><p>Avalanche x bola de neve, a ordem recomendada e quando vale trocar de dívida.</p></details>
+<details><summary>8. Renda extra realista</summary><p>Ideias por perfil, teste de três perguntas e como fugir de promessas de dinheiro fácil.</p></details>
+<details><summary>9. Como não voltar para o vermelho</summary><p>Colchão de emergência, hábitos que protegem e como lidar com gatilhos de gasto.</p></details>
+<details><summary>10. Plano de 30 dias</summary><p>Uma tarefa pequena por dia, com caixinhas para marcar.</p></details>
+</div></section>
+
+<section><div class="w">
+<span class="tag">Bônus incluídos</span>
+<h2>Material pronto para usar</h2>
+<ul class="ok">
+<li><b>Mapa da dívida</b> e controle de acordos para imprimir</li>
+<li><b>Modelos de mensagem</b> para negociar e oferecer serviços</li>
+<li><b>Checklist de negociação</b> e revisão semanal de 10 minutos</li>
+<li><b>Registro de renda extra</b> e glossário em linguagem simples</li>
+</ul>
+</div></section>
+
+<section class="alt"><div class="w">
+<div class="grid c2">
+<div class="card" style="background:var(--greenbg)"><h3 class="grn">É para você se…</h3><ul class="ok" style="font-size:15.5px"><li>quer entender onde está e por onde começar</li><li>prefere passos práticos a teoria</li><li>topa dedicar um pouco de tempo por dia</li></ul></div>
+<div class="card" style="background:var(--redbg)"><h3 class="red">Não é para você se…</h3><p style="color:var(--fg)">espera uma fórmula mágica ou enriquecimento rápido, ou precisa de orientação jurídica sobre um processo específico. Para isso, procure um profissional.</p></div>
+</div></div></section>
+
+<section id="comprar"><div class="w">
+<div class="price">
+<span class="tag" style="color:#7fd1ae">Oferta</span>
+<h2 style="margin:0">Do Vermelho ao Azul</h2>
+<div class="big"><small>R$</small><span id="preco">27</span></div>
+<p style="color:#c3d1e3;margin-bottom:16px">Pagamento único · PDF com acesso imediato</p>
+<ul class="ok" style="margin-bottom:22px"><li>Guia completo de 26 páginas</li><li>Formulários e checklists imprimíveis</li><li>Modelos de mensagem prontos</li><li>Plano de 30 dias</li></ul>
+<a class="btn" href="#" data-buy>Quero começar agora</a>
+</div>
+<p class="fine" style="margin-top:14px;text-align:center">🔒 Compra segura. Por ser uma compra online, você tem o direito de arrependimento de 7 dias previsto no Código de Defesa do Consumidor.</p>
+</div></section>
+
+<section class="alt"><div class="w">
+<span class="tag">Dúvidas frequentes</span>
+<h2>Perguntas comuns</h2>
+<details><summary>Como recebo o material?</summary><p>É um arquivo PDF. Depois da confirmação do pagamento, você recebe o acesso para baixar e ler no celular, tablet ou computador.</p></details>
+<details><summary>Em quanto tempo vou quitar minhas dívidas?</summary><p>Depende da sua renda, do valor devido e das suas escolhas. O guia não promete quitação em 30 dias: o plano de 30 dias organiza tudo, fecha acordos e coloca você no caminho.</p></details>
+<details><summary>Preciso de planilha ou aplicativo?</summary><p>Não. Os formulários vêm prontos para imprimir. Se preferir, você pode copiar para uma planilha.</p></details>
+<details><summary>Serve se eu tenho poucas dívidas, ou muitas?</summary><p>Sim. O método de mapear, priorizar e negociar vale para qualquer quantidade.</p></details>
+<details><summary>O guia substitui um advogado ou consultor?</summary><p>Não. O conteúdo é educativo. Para dívidas judiciais ou casos complexos, procure um profissional ou a Defensoria Pública.</p></details>
+</div></section>
+
+<section><div class="w" style="text-align:center">
+<h2>O primeiro passo é olhar para o problema</h2>
+<p class="muted">Você já deu o mais difícil ao chegar até aqui. Falta transformar a vontade em um plano.</p>
+<a class="btn" href="#" data-buy>Quero o guia Do Vermelho ao Azul</a>
+<p class="fine" style="margin-top:28px">Este material tem caráter educativo e não substitui orientação de advogado, contador ou consultor financeiro. Exemplos e valores são ilustrativos. Nenhum resultado é garantido: ele depende da sua situação e das suas ações. Leis e programas mudam; confirme as regras atuais em fontes oficiais.</p>
+</div></section>
+
+<div class="bar"><div>Guia em PDF<b>R$ <span id="preco2">27</span></b></div><a class="btn" href="#" data-buy>Quero o guia</a></div>
+<div id="toast" role="status">Link de pagamento em breve</div>
+<script>
+var CHECKOUT_URL="";
+var t=document.getElementById("toast");
+document.querySelectorAll("[data-buy]").forEach(function(a){
+ a.addEventListener("click",function(e){
+  if(CHECKOUT_URL){a.href=CHECKOUT_URL;return;}
+  e.preventDefault();t.classList.add("on");setTimeout(function(){t.classList.remove("on")},2200);
+ });
+});
+</script>
+</body>
+</html>
